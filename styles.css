@@ -1,0 +1,59 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  margin: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #d16ba5;
+}
+
+#malla-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.curso {
+  background-color: #ffd6e0;
+  border-radius: 16px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.curso.aprobado {
+  background-color: #b9fbc0;
+}
+
+.curso.bloqueado {
+  background-color: #fcd5ce;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.curso input {
+  margin-top: 8px;
+}
+
+.curso button {
+  margin-top: 6px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f28482;
+  color: white;
+  cursor: pointer;
+}
+
+.curso button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
